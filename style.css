@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'LineSeedTW';
+    font-size: 16px;
+}
+
+@media(max-width:430px) {
+    body {
+    min-width: 430px;
+    margin: 0;
+    padding: 0;
+    font-family: 'LineSeedTW';
+    font-size: 16px;}
+}
+
+/* ==================================== */
+/* LINE SEED - Thin */
+/* ==================================== */
+@font-face {
+    font-family: 'LineSeedTW';
+    src: url('./assets/fonts/LINESeedTW_OTF_Th.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+/* ==================================== */
+/* LINE SEED - Regular */
+/* ==================================== */
+@font-face {
+    font-family: 'LineSeedTW';
+    src: url('./assets/fonts/LINESeedTW_OTF_Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+/* ==================================== */
+/* LINE SEED - Bold */
+/* ==================================== */
+@font-face {
+    font-family: 'LineSeedTW';
+    src: url('./assets/fonts/LINESeedTW_OTF_Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/* ==================================== */
+/* LINE SEED - Extra Bold */
+/* ==================================== */
+@font-face {
+    font-family: 'LineSeedTW';
+    src: url('./assets/fonts/LINESeedTW_OTF_Eb.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+.header-container {
+    position: relative;
+    background-color: white;
+}
+
+.background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 740px;
+}
+
+.background-color {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to bottom,
+        black 22%,
+        white 100%
+    );
+    z-index: 5;
+}
+
+.background-image1 {
+    position: absolute;
+    top: -10px;
+    right: -100px;
+    width: 800px;
+    z-index: 10;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    min-width: 1000px;
+    font-size: 300px;
+    font-weight: 100;
+    color: rgb(45, 45, 45);
+    white-space: normal; 
+    word-break: break-word;
+    z-index: 7;
+}

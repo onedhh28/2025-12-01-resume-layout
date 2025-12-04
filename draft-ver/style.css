@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'LineSeedTW';
+    font-size: 16px;
+}
+
+@media(max-width:430px) {
+    body {
+    min-width: 430px;
+    margin: 0;
+    padding: 0;
+    font-family: 'LineSeedTW';
+    font-size: 16px;}
+}
+
+/* ==================================== */
+/* LINE SEED - Thin */
+/* ==================================== */
+@font-face {
+    font-family: 'LineSeedTW';
+    src: url('./assets/fonts/LINESeedTW_OTF_Th.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+/* ==================================== */
+/* LINE SEED - Regular */
+/* ==================================== */
+@font-face {
+    font-family: 'LineSeedTW';
+    src: url('./assets/fonts/LINESeedTW_OTF_Rg.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+/* ==================================== */
+/* LINE SEED - Bold */
+/* ==================================== */
+@font-face {
+    font-family: 'LineSeedTW';
+    src: url('./assets/fonts/LINESeedTW_OTF_Bd.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+/* ==================================== */
+/* LINE SEED - Extra Bold */
+/* ==================================== */
+@font-face {
+    font-family: 'LineSeedTW';
+    src: url('./assets/fonts/LINESeedTW_OTF_Eb.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+.header-container {
+    position: relative;
+    background-color: black;
+    height: 640px;
+    display: flex; /* 用來置中白色區塊 */
+    justify-content: center; /*垂直置中*/
+    align-items: center; /*水平置中*/
+}
+
+.feather-overlay-block {
+    position: absolute;
+    bottom: 0; /* 貼齊底部 */
+    left: 0;
+    width: 100%;
+    height: 100%; /* 控制羽化的範圍/高度 */
+    background: linear-gradient(
+        to bottom, /* 漸層方向：從上到下 */
+        rgba(0, 0, 0, 0) 10%, /* 頂部 */
+        rgba(255, 255, 255, 1) 80% /* 底部*/);
+
+}
+
+@media(max-width:430px) {
+    .header-container {
+    height: 740px;
+    }
+    .feather-overlay-block {
+    background: linear-gradient(
+    to bottom, /* 漸層方向：從上到下 */
+    rgba(0, 0, 0, 0) 2%, /* 頂部 */
+    rgba(255, 255, 255, 1) 40% /* 底部*/);
+    }
+}
+
+.overlay-block1 {
+    position: absolute;
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap; 
+    min-width: 350px;
+    margin-top: 430px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 54%;
+    height: 100%;
+    background-color: white;
+}
+
+@media(max-width:430px) {
+    .overlay-block1 {
+    position: absolute;
+    align-items: start;
+    display: block;
+    min-width: 330px;
+    margin-top: 500px;
+    padding-top: 30px;
+    width: 250px;
+    background-color: white;
+}
+
+}
+
+.icon-block {
+    margin: 5%;
+}
+
+.basic-info-block {
+    margin-top: 150px;
+    margin-right: 5%;
+    margin-left: 3%;
+}   
+
+
+@media(max-width:430px) {
+    .basic-info-block {
+    margin-top: 0px;
+    margin-left: 5%;
+}
+}
+
+.overlay-block2 {
+    position: relative;
+    align-items: start;
+    display: block;
+    flex-wrap: wrap; 
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 30px;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+@media(max-width:430px) {
+    .overlay-block2 {
+        margin-left: 5%;
+        padding-left: 0px;
+    }
+
+}
+
+
+
+/*背景標題*/
+h1 {
+    display: block;
+    position: relative;
+    min-width: 700px;
+    top: 100px;
+    left: 4%;
+    margin-right: 8%;
+    font-family: 'LineSeedTW';
+    color: rgb(255, 255, 255);
+    font-size: 170px;
+    font-weight: 100;
+    white-space: normal; 
+    word-break: break-word;
+}
+@media(max-width:430px) {
+    h1 {
+    display: block;
+    position: relative;
+    min-width: 200px;
+    top: 30px;
+    left: 4%;
+    margin-right: 8%;
+    font-family: 'LineSeedTW';
+    color: rgb(255, 255, 255);
+    font-size: 130px;
+    font-weight: 100;
+    white-space: normal; 
+    word-break: break-word;}    
+}
+
+.name {
+    font-family: 'LineSeedTW';
+    font-size: 65px;
+    color: 	#272727;
+    font-weight: 800;
+}
+
+.content {
+    font-family: 'LineSeedTW';
+    font-size: 16px;
+    color: #2a2a2a;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.green {
+    font-family: 'LineSeedTW';
+    color: #70bdbd;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.subtitle-24 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 6px;
+}
+
+.title-i {
+    font-style: italic;
+}
+
+
+.icon-mask {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    /* === 關鍵：應用 clip-path 圓形遮罩 === */
+    clip-path: inset(200px 100px at 80% 50%); 
+}
+
+.block {
+    height: 18px; /* 關鍵：讓區塊高度很小，形成線條的粗細 */
+    width: 10px; /* 設定線的長度 */
+    background-color: #d4d4d4; /* 關鍵：使用背景色作為線的顏色 */
+    margin-right: 10px;
+    display: inline-block;
+    transform: skewX(-20deg);
+}
