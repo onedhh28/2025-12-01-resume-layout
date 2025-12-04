@@ -176,7 +176,7 @@ h1 {
     top: 200px;
     padding: 5%;
     width: 55%;
-    height: 700px;
+    height: 900px;
     min-width: 400px;
     background-color: white;
     z-index: 10;
@@ -190,7 +190,7 @@ h1 {
     padding: 30px;
     width: 55%;
     min-width: 400px;
-    height: 1000px;
+    height: 1100px;
     background-color: white;
     z-index: 10;
 }
@@ -200,7 +200,7 @@ h1 {
     .overlay-block1 {
     top: 300px;
     min-width: 90%;
-    height: 1100px;
+    height: 1200px;
     padding: 0px;
     }
 }
@@ -343,10 +343,8 @@ h1 {
 
 .text-block {
     display: block;
-    text-align: center;
-    width: 180px;
-    background-color: #272727;
-    color: white;
+    color: #2a2a2a;
+    line-height: 22px;
 }
 
 .block {
