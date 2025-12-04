@@ -56,16 +56,10 @@ body {
     padding: 0;
     font-family: 'LineSeedTW';
     font-size: 16px;
+    overflow-x: hidden;
+    overflow-y: scroll;   
 }
 
-@media(max-width:430px) {
-    body {
-    min-width: 430px;
-    margin: 0;
-    padding: 0;
-    font-family: 'LineSeedTW';
-    font-size: 16px;}
-}
 
 /* ==================================== */
 /* LINE SEED - Thin */
@@ -144,6 +138,14 @@ body {
     z-index: 5;
 }
 
+@media (max-width:430px) {
+    .background-image1 {
+        width: 200px;
+        width: auto;
+        overflow: hidden;
+    }
+}
+
 h1 {
     position: absolute;
     top: 10px;
@@ -155,6 +157,14 @@ h1 {
     white-space: normal; 
     word-break: break-word;
     z-index: 3
+}
+
+@media (max-width:430px) {
+    .h1 {
+        font-size: 30px;
+        color: salmon;
+        overflow: hidden;
+    }
 }
 
 .overlay-block1 {
@@ -172,11 +182,35 @@ h1 {
     z-index: 10;
 }
 
+@media (max-width:1280px) {
+    .overlay-block1 {
+    display: block;
+    position: absolute;
+    top: 200px;
+    padding: 30px;
+    width: 55%;
+    min-width: 400px;
+    height: 1280px;
+    background-color: rgb(255, 124, 124);
+    z-index: 10;
+}
+}
+
+
 .icon {
     grid-area: 1 / 1 / 2 / 2;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width:1280px) {
+    .icon { 
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    }
 }
 
 .icon-mask {
@@ -188,16 +222,42 @@ h1 {
     z-index: 12;
 }
 
+@media (max-width:1280px) {
+    .icon-mask {
+        width: 80%;
+    max-width: 600px;
+    min-width: 300px; 
+    height: 300px;   
+    clip-path: inset(200px 100px at 80% 50%); 
+    }
+}
+
+
 .info {
     grid-area: 1 / 2 / 2 / 2;
     margin-top: 190px;
 }
 
+@media (max-width:1280px) {
+    .info {
+    margin-top: 0px;
+    margin-left: 10%;
+    margin-bottom: 40px
+}
+
+}
 
 
 .info2 {
     grid-area: 2 / 1 / 2 / 3;
     margin-left: 20%;
+}
+
+@media (max-width:1280px) {
+    .info2 {
+    margin-left: 10%;
+}
+
 }
 
 
