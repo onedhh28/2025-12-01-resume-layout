@@ -107,6 +107,9 @@ body {
 
 
 .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     background-color: white;
 }
@@ -130,7 +133,7 @@ body {
         black 22%,
         white 100%
     );
-    z-index: 5;
+    z-index: 1;
 }
 
 .background-image1 {
@@ -138,7 +141,7 @@ body {
     top: -10px;
     right: -100px;
     width: 800px;
-    z-index: 10;
+    z-index: 5;
 }
 
 h1 {
@@ -151,5 +154,103 @@ h1 {
     color: rgb(45, 45, 45);
     white-space: normal; 
     word-break: break-word;
-    z-index: 7;
+    z-index: 3
+}
+
+.overlay-block1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 10px;
+    position: absolute;
+    top: 200px;
+    padding: 30px;
+    width: 55%;
+    min-width: 400px;
+    height: 1280px;
+    background-color: white;
+    z-index: 10;
+}
+
+.icon {
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-mask {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; 
+    /* === 遮罩範圍 === */
+    clip-path: inset(200px 100px at 80% 50%); 
+    z-index: 12;
+}
+
+.info {
+    grid-area: 1 / 2 / 2 / 2;
+    margin-top: 190px;
+}
+
+
+
+.info2 {
+    grid-area: 2 / 1 / 2 / 3;
+    margin-left: 20%;
+}
+
+
+
+
+
+/* 文字設定的部分 */
+
+.name {
+    font-family: 'LineSeedTW';
+    font-size: 65px;
+    color: 	#272727;
+    font-weight: 800;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.subtitle-24 {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 3px;
+}
+
+.green {
+    font-family: 'LineSeedTW';
+    color: #70bdbd;
+}
+
+.title-i {
+    font-style: italic;
+}
+
+.content {
+    font-family: 'LineSeedTW';
+    font-size: 16px;
+    color: #2a2a2a;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.block {
+    height: 18px; 
+    width: 10px;
+    background-color: #d4d4d4;
+    margin-right: 10px;
+    display: inline-block;
+    transform: skewX(-20deg);
 }
