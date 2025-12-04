@@ -162,7 +162,7 @@ h1 {
 @media (max-width:430px) {
     .h1 {
         font-size: 30px;
-        color: salmon;
+        color: rgb(45, 45, 45);
         overflow: hidden;
     }
 }
@@ -191,7 +191,7 @@ h1 {
     width: 55%;
     min-width: 400px;
     height: 1280px;
-    background-color: rgb(255, 124, 124);
+    background-color: rgb(255, 255, 255);
     z-index: 10;
 }
 }
